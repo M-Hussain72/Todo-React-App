@@ -23,7 +23,7 @@ app.use(cors());
 // ))
 
 app.use('/todo', TodoRouter);
-
+console.log(`in index : ${mongoDBURL}`);
 mongoose
   .connect(mongoDBURL)
   .then(() => {

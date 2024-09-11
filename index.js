@@ -25,7 +25,7 @@ app.use(cors());
 app.use('/todo', TodoRouter);
 console.log(`in index : ${mongoDBURL}`);
 mongoose
-  .connect(mongoDBURL)
+  .connect(mongoDBURL,{ useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => {
     console.log('app connected to database');
     app.listen(PORT, () => {

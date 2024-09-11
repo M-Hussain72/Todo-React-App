@@ -4,5 +4,6 @@ import dotenv from 'dotenv';
 dotenv.config();
 export const PORT = process.env.PORT || 5555;
 
-export const mongoDBURL = process.env.MONGO_DB_URL;
+export const mongoDBURL ='mongodb+srv://hussain:mh6302288@cluster0.ti747.mongodb.net/?retryWrites=true&w=majority'
+// process.env.MONGO_DB_URL;
 console.log(mongoDBURL);

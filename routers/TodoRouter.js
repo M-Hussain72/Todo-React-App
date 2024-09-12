@@ -60,7 +60,7 @@ router.get('/:search', async (request, response) => {
       });
     }
 
-    return response.status(404).json({ message: 'Todo Not Find!' });
+    return response.status(201).json({ message: 'Todo Not Find!' });
   } catch (error) {
     console.log(error.message);
     response.status(500).send({ message: error.message });
